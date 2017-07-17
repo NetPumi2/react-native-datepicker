@@ -334,7 +334,8 @@ class DatePicker extends Component {
       TouchableComponent,
       testID,
       cancelBtnTestID,
-      confirmBtnTestID
+      confirmBtnTestID,
+      accessibilityLabel
     } = this.props;
 
     const dateInputStyle = [
@@ -349,6 +350,7 @@ class DatePicker extends Component {
         underlayColor={'transparent'}
         onPress={this.onPressDate}
         testID={testID}
+        accessibilityLabel={accessibilityLabel}
       >
         <View style={[Style.dateTouchBody, customStyles.dateTouchBody]}>
           {
